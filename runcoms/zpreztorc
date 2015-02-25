@@ -161,3 +161,12 @@ zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
 
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+#
+
+
+#
+# customizations
+#
+
+# don't use git diff
+zstyle ':prezto:module:utility:diff' color 'no'
