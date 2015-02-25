@@ -153,7 +153,7 @@ alias http-serve='python -m SimpleHTTPServer'
 
 # Makes a directory and changes to it.
 function mkdcd {
-  [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
+  [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1" && ll
 }
 
 # Changes to a directory and lists its contents.
