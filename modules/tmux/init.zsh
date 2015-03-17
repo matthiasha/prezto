@@ -30,7 +30,7 @@ if ! tmux has-session -t "$tmux_session" 2> /dev/null; then
 
   # Enable the destruction of unattached sessions globally to prevent
   # an abundance of open, detached sessions.
-  tmux set-option -g destroy-unattached on &> /dev/null
+  # tmux set-option -g destroy-unattached on &> /dev/null
 fi
 
 # Set options globally
@@ -72,5 +72,5 @@ fi
 # Aliases
 #
 
-alias tmuxa="tmux $_tmux_iterm_integration new-session -A"
+alias tmuxa="tmux $_tmux_iterm_integration attach -t ${tmux_session}"
 alias tmuxl='tmux list-sessions'
