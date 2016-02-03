@@ -11,4 +11,15 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+alias pipi="pip install -U "
+alias pipe="pip install -e"
+alias pipu='pip uninstall'
+
 source $HOME/.profile
+
+[[ "`uname`" == "Linux" ]] && source /local/tc/bin/activate_gti
+
+export PIP_INDEX_URL="http://devpi-eu.dolby.net/ngc/prod"
+export PIP_TRUSTED_HOST="devpi-eu.dolby.net devpi-au.dolby.net devpi.dolby.net"
+
