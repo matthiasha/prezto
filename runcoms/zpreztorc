@@ -169,9 +169,5 @@ zstyle ':prezto:module:tmux:iterm' integrate 'yes'
 # customizations
 #
 
-# Mac Key Bindings
-bindkey '^[^[[D' backward-word
-bindkey '^[^[[C' forward-word
-
 # don't use git diff
 # zstyle ':prezto:module:utility:diff' color 'no'
