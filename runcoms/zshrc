@@ -12,16 +12,15 @@ fi
 
 # Customize to your needs...
 
-alias pipi="pip install -U "
+alias pipi="devpi install "
 alias pipe="pip install -e"
 alias pipu='pip uninstall'
+alias rgrep='grep -r'
+alias gp='git pull && git push'
 
 source $HOME/.profile
 
 [[ "`uname`" == "Linux" ]] && source /local/tc/bin/activate_gti
-
-export PIP_INDEX_URL="http://devpi-eu.dolby.net/ngc/prod"
-export PIP_TRUSTED_HOST="devpi-eu.dolby.net devpi-au.dolby.net devpi.dolby.net"
 
 # Mac Key Bindings
 bindkey '^[^[[D' backward-word
