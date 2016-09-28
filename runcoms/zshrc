@@ -16,6 +16,7 @@ alias pipi="devpi install "
 alias pipe="pip install -e"
 alias pipu='pip uninstall'
 alias rgrep='grep -r'
+alias hd='hexdump -C'
 alias gp='git pull && git push'
 
 source $HOME/.profile
