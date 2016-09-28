@@ -19,11 +19,17 @@ alias rgrep='grep -r'
 alias hd='hexdump -C'
 alias gp='git pull && git push'
 
-source $HOME/.profile
+function _save_cd {
+  cd $@
+  rm -f ~/.cwd
+  echo $PWD > ~/.cwd
+}
+[[ -e ~/.cwd ]] && cd `cat ~/.cwd`
+alias cd=_save_cd
 
-[[ "`uname`" == "Linux" ]] && source /local/tc/bin/activate_gti
+source $HOME/.profile
+source $HOME/.rcpriv
 
 # Mac Key Bindings
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
-
