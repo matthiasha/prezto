@@ -18,8 +18,7 @@ version is 4.3.17.
   2. Clone the repository:
 
         cd $HOME
-        git clone --recursive https://github.com/matthiasha/prezto
-        mv prezto .zprezto
+        git clone --recursive https://github.com/matthiasha/prezto .zprezto
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
