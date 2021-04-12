@@ -13,24 +13,31 @@ version is 4.3.17.
 
   1. Launch Zsh:
 
+        ```bash
         zsh
+        ```
 
   2. Clone the repository:
-
+        ```bash
         cd $HOME
         git clone --recursive https://github.com/matthiasha/prezto .zprezto
+        ```
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
 
+        ```bash
         setopt EXTENDED_GLOB
         for rcfile in .zprezto/runcoms/^README.md(.N); do
           ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
         done
+        ```
 
   4. Set Zsh as your default shell:
 
+        ```bash
         chsh -s /bin/zsh
+        ```
 
   5. Open a new Zsh terminal window or tab.
 
@@ -45,7 +52,9 @@ Updating
 
 Pull the latest changes and update submodules.
 
+    ```bash
     git pull && git submodule update --init --recursive
+    ```
 
 Usage
 -----
